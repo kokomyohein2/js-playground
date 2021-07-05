@@ -34,9 +34,9 @@ for (const [key, value] of Object.entries(wordWithCount)) {
 
 let result = [];
 
-for (const [key, value] of Object.entries(sortedAndCountedWords)) {
-  //   console.log(value);
-  result = result.concat(value);
-}
+Object.entries(sortedAndCountedWords).forEach(([key, value]) => {
+  console.log(value);
+  result = [...result, value];
+});
 
 console.log(result);
