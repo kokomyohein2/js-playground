@@ -19,5 +19,9 @@ const sortedStudentByName = students.sort((a, b) => {
 
 const sortedStudentByAge = students.sort((a, b) => a.age - b.age);
 
-console.log(sortedStudentByName);
-console.log(sortedStudentByAge);
+// console.log(sortedStudentByName);
+// console.log(sortedStudentByAge);
+
+const totalAgesOfAllStudent = students.reduce((acc, cur) => acc + cur.age, 0);
+
+// console.log(totalAgesOfAllStudent);
