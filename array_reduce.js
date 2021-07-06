@@ -13,6 +13,7 @@ const totalAgesOfAllStudent = students.reduce((acc, cur) => acc + cur.age, 0);
 
 // console.log(totalAgesOfAllStudent);
 
+// get total of eye colors
 const studentsByEyeColor = students.reduce((acc, cur) => {
   const color = cur.eye;
   if (acc[color]) {
@@ -23,4 +24,8 @@ const studentsByEyeColor = students.reduce((acc, cur) => {
   return acc;
 }, {});
 
-console.log(studentsByEyeColor);
+// console.log(studentsByEyeColor);
+
+// get total num of chars in name
+const totalNumOfCharsInName = students.reduce((acc, cur) => acc + cur.name.length, 0);
+console.log(totalNumOfCharsInName);
