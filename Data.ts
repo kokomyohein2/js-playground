@@ -1,4 +1,4 @@
-const students = [
+const students: { name: string; age: number; eye: string }[] = [
   { name: "koko", age: 25, eye: "blue" },
   { name: "nge", age: 24, eye: "blue" },
   { name: "boo", age: 5, eye: "brown" },
@@ -9,8 +9,6 @@ const students = [
   { name: "boohtwar", age: 4, eye: "gray" },
 ];
 
-const allBlueEyes = students.every((student) => student.eye === "blue");
-// console.log(allBlueEyes);
+const schools: string[] = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
-const allYoung = students.every((student) => student.age < 30);
-console.log(allYoung);
+export { students, schools };
